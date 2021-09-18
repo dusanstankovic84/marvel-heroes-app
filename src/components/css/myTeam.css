@@ -1,0 +1,47 @@
+.nameList{
+    display: flex!important;
+    align-items: center!important;
+}
+.imgList, .nameList{
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.delete_icon{
+
+    background-color: white;
+    font-size: 56px;
+
+}
+.imgList {
+    position: relative;
+  
+  }
+  
+  .image_team {
+    opacity: 1;
+    display: block;
+
+
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .imgList:hover .image {
+    opacity: 0.3;
+  }
+  
+  .imgList:hover .middle {
+    opacity: 1;
+  }
+  
